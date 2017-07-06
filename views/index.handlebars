@@ -1,0 +1,19 @@
+<h1> All Saturday Night Live seasons and episodes </h1>
+
+<ul>
+	{{#each episode}}
+		<li>
+			<p>
+				{{this.sid}}. {{this.eid}}. {{this.host}}. {{this.title}}
+
+			</p>
+		</li>
+	{{/each}}
+</ul>
+
+<h2>Search for a season to see every episode and skit</h2>
+<form method="get" action="/" class="button-size">
+	<textarea type="text" name="title" placeholder="season"></textarea>
+	<button type="submit">Search</button>
+</form>
+
