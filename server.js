@@ -46,7 +46,7 @@ app.get("/:season", function(req, res){
 			throw err;
 		}
 
-		res.render("index", {title: data, episode: data});
+		res.redirect("index", {title: data, episode: data});
 	})
 })
 
